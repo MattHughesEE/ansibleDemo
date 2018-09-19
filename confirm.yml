@@ -2,7 +2,6 @@
 ---
 - name: Find the demo.txt file
   hosts: all
-  #become_method: runas
   
   tasks:
   - name: Find files and do not return the checksum
