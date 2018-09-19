@@ -7,6 +7,6 @@
   tasks:
   - name: Find file
     win_find:
-      paths: C:\Users\Administrator\Desktop\test.txt
+      paths: 'c:\Users\Administrator\Desktop\test.txt'
       file_type: file
       
