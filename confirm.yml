@@ -5,6 +5,6 @@
   #become_method: runas
   
   tasks:
-- name: Find file
-  find:
-     paths: /Users/Administrator/Desktop/test.txt
+  - name: Find file
+    find:
+      paths: /Users/Administrator/Desktop/test.txt
