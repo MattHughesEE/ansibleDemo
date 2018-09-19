@@ -9,6 +9,6 @@
     win_find:
        paths: C:\Users\Administrator\Desktop\test.txt.txt
        file_type: file
-       recurse: yes
-       get_checksum: no
+       #recurse: yes
+       #get_checksum: no
       
