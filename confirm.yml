@@ -6,5 +6,7 @@
   
   tasks:
   - name: Find file
-    find:
+    win_find:
       paths: /Users/Administrator/Desktop/test.txt
+      file_type: file
+      
