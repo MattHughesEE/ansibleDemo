@@ -5,9 +5,8 @@
   #become_method: runas
   
   tasks:
-  - name: Find file
+  - name: Find files and do not return the checksum
     win_find:
-      paths: 'c:\Users\Administrator\Desktop\test.txt'
-      recurse: yes
-      file_type: file
+       paths: C:\Users\Administrator\Desktop
+       get_checksum: no
       
