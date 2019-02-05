@@ -50,11 +50,11 @@
       resource_group: myResourceGroup
       name: myVM
       vm_size: Standard_DS1_v2
-      admin_username: azureuser
+      admin_username: mhughes
       ssh_password_enabled: false
       ssh_public_keys:
-        - path: /home/azureuser/.ssh/authorized_keys
-          key_data: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDG7B0ih/VJvhaFs3X7Lrco8hrKAx3xXnR0OTv9wvRlVzVuAns/h0e2PPb5JlZ5IwTZeaFiD7RXevDWZhkfrEndIriFXN2i7F/UkueEGhACF0GiqR48TuKIKwShlWhrrNyjoM65b8icSS9G42m0juxHwtWtGRpWltEGIdYSxKYhammW5FvZwJsYl8RsOXRnZLQr/+bbKuz8Gjd/9XXuWg5dORmpw/Osf9GWB/btU/yVoaDRzwqKOoHFL4nVqhs2rs1EJw4p2tpZj07Y6x4ebzxlZFag05OJfAwY7teNBVJ1kP4Mo2Y1Cjd1W0COqmOXvvzO8vm3j27MQTqF92ka0xpt azureuser@cc-b2dc097e-66c494d9fb-7rgq5
+        - path: /home/mhughes/.ssh/authorized_keys
+          key_data: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDaQIkyfAwF2tfgNuPjVsnjI5EJg6BA5zHkWF85bvr+BdAaCaeOC/eXrQsqqN2H7DKoLKb/8KxI/7DPoHNgennLjjH3NQyKBUEB5+6Vlevbew2+wxUbRTpKNazSGQUlEKJuxehP6dnhr9Js/VkUZWrkTpEwipI3hIQA6iqtdLa2mq7DbOBFKlewBgilJmI6KoEw/0vkZ5Mdmcs9pQTCp0Ebe+KM5ehhPUweTyeFuqDykemAE9qIPLDyEsQz4tA2S7CJ8lHeFNNslG8FROY/QC16MhzfkpHxQm3wP4x1tOfroCJ74By578VfWZ2SNCzoJ+KqKpzqAkbzjuHyKZVA9N/1
       network_interfaces: myNIC
       image:
         offer: CentOS
