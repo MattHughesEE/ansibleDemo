@@ -54,7 +54,7 @@
       ssh_password_enabled: false
       ssh_public_keys:
         - path: /home/mhughes/.ssh/authorized_keys
-          key_data: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOiRcyvl6VfRhEngjHYH/q1OpxkRcuD3kDID5z2hOnU2cNK4kYqmg5Obmz2lFQNSOfzLEIjdVwwsWbnY3w/hJUow2oRPtmhg2vPO5yeeyIlzwX/GutgYyMW/P7o7PN2SCVPc7UIO04Xs5IhAweLW9c0IvZkw4KOf1zseTqzlyNH+lqyQU5QKy2dzdgwn+gNnnL2pnqQ1ZkhNbHzim3DPXhJRAzOrBTxpbqE32I6zw+ZjeGhdy4FlsgO83az59wTbUncSlByaLX9VaFcxGhmq0PUPxDyTjKkMfSvqphMkIVYNxG2A2H8G2NiL+7pqeQ2hsEe2NB9syAnyptdcAceNAt
+          key_data: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCudQfZCmINpd6OSUihsLxVIl6h8OsxL/FTqBCcMT7NfqmZYJgPJYLCloGKJqTRJobfNKKGGcr1+vzYxIqeRu1JuC6DTWliWDTYX9T1+Y2RL09gzqdEvQjSY+bYTR6JgYtCbpSszX6gFad1Q0c5qzCjOEf9RKayP8ouNipivf8OqXF6xI1I3y6mLFrNQpKe/k0MdAxoDyd68iyYegJPgfR58DWmsqhkbn/jaTrXJjrmMW6hBCx1XF1SPkGAjw4tSHrOxOZBKKQlSGm3RuAqQ98slYiqzo253K55PhF6eRyxEYq6tjse0VPqwMpb7QkSll6aVqW61iC+svN5D9L8ROOR azureuser@cc-f99470df-9f56d9cb8-p995j
       network_interfaces: myNIC
       image:
         offer: WindowsServer
