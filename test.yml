@@ -3,5 +3,4 @@
   tasks:
     - name: Hello Test
       debug:
-        msg: "Cubs 0 --- 8 Braves :(
-              Astros 2 --- 1 Rangers :)"
+        msg: "Cubs 0 --- 8 Braves :( /BUT/ Astros 2 --- 1 Rangers :)"
