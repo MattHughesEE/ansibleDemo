@@ -1,0 +1,6 @@
+- name: Testing Github 
+  hosts: all
+  tasks:
+    - name: Hello Test
+      debug:
+        msg: "Hello World!"
