@@ -3,3 +3,4 @@
   tasks:
   - name: Ping
     ping:
+      data: crash
