@@ -3,4 +3,5 @@
   tasks:
     - name: Hello Test
       debug:
-        msg: "Hello World!"
+        msg: "Cubs 0 --- 8 Braves :("
+        msg: "Astros 2 --- 1 Rangers :)"
