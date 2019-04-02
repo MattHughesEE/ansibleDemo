@@ -1,4 +1,5 @@
 - name: Testing Github
+  hosts:
   tasks:
     - name: Hello Test
       debug:
