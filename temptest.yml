@@ -1,5 +1,5 @@
 - name: Testing Github 
-  hosts: all
+  hosts: ec2
   tasks:
     - name: Hello Test
       debug:
