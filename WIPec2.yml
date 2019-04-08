@@ -10,7 +10,7 @@
     subnet_name: subnet-ed86bf85
     security_group: sg-079c52d7e252b845d
     Environemnt: Test
-    image_id: ami-04be6a27b0206807f
+    ec2_ami_image: ami-04be6a27b0206807f
     region: us-east-2
     Application_Name: TestApp
   tasks:
