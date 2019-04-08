@@ -20,15 +20,15 @@
        vpc_subnet_id: subnet-ed86bf85
        assign_public_ip: yes
        wait: yes
+       volumes: 
+         - device_name: /dev/sdb/
+           snapshot: snap-test1234
+           volume_type:io1
+           iops: 1000
+           volume_size: 10
+           delete_on_termination: true
+       
     register: ec2
   
   - debug:
       var: ec2
-  - name: Volume
-    ec2_vol:
-        region: "{{ region }}"
-        instance: ec2.instance_ids
-        volume_type: gp2
-        volume_size: 4
-        delete_on_termination: yes
-        tags: {'Application':'Example'}
