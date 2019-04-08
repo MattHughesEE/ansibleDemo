@@ -15,7 +15,7 @@
     Application_Name: TestApp
   tasks:
   - name: New instance with Public IP
-      ec2_instance:
+    ec2_instance:
     #profile:
       region: "{ aws_region }"
       name: "{{ resource_name }}"
