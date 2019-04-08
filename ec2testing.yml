@@ -22,7 +22,7 @@
        wait: yes
        volumes: 
          - device_name: /dev/sdb/
-           snapshot: snap-test1234
+           #snapshot: snap-test1234
            volume_type: io1
            iops: 1000
            volume_size: 10
