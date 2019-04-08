@@ -15,20 +15,20 @@
     Application_Name: TestApp
   tasks:
   - name: New instance with Public IP
-  ec2_instance:
+      ec2_instance:
     #profile:
-    region: "{ aws_region }"
-    name: "{{ resource_name }}"
-    key_name: "{{ key_name }}"
-    vpc_sub_net: "{{ subnet_name }}"
-    security_group: "{{ security_group }}"
-    network:
-      assign_public_ip: true
-    image_id: " {{ ec2_ami_image[aws_region] }}"
-    tags:
-      Name: "{{ resource_name }}"
-      Env: "{{ Environemnt }}"
-      Drive: root
-      Application: "{{ Application_Name }}"
-  register: in_default_vpc
-- debug: in_default_vpc
+      region: "{ aws_region }"
+      name: "{{ resource_name }}"
+      key_name: "{{ key_name }}"
+      vpc_sub_net: "{{ subnet_name }}"
+      security_group: "{{ security_group }}"
+      network:
+        assign_public_ip: true
+      image_id: " {{ ec2_ami_image[aws_region] }}"
+      tags:
+        Name: "{{ resource_name }}"
+        Env: "{{ Environemnt }}"
+        Drive: root
+        Application: "{{ Application_Name }}"
+    register: in_default_vpc
+    - debug: in_default_vpc
