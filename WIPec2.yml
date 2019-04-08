@@ -30,5 +30,5 @@
         Env: "{{ Environemnt }}"
         Drive: root
         Application: "{{ Application_Name }}"
-    register: in_default_vpc
-    - debug: in_default_vpc
+    #register: in_default_vpc
+    #- debug: in_default_vpc
