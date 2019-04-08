@@ -2,6 +2,7 @@
 - name: Provisioning ec2 instance
   hosts: localhost
   connection: local
+  tasks:
   - name: Tagging and CloudWatch
     ec2:
       key_name: mykey
