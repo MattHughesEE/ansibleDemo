@@ -9,8 +9,8 @@
       region: us-east-2
       #group: databases
       instance_type: t2.micro
-      #image: ami-04be6a27b0206807f
-      image: ami-0cd3dfa4e37921605
+      image: ami-04be6a27b0206807f
+      #image: ami-0cd3dfa4e37921605
       wait: yes
       #wait_timeout: 500
       count: 1
