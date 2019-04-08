@@ -21,7 +21,7 @@
        assign_public_ip: yes
        wait: yes
        volumes: 
-         - device_name: /dev/sdb/
+         - device_name: /dev/sdf/
            #snapshot: snap-test1234
            volume_type: io1
            iops: 1000
