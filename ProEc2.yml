@@ -28,4 +28,5 @@
       monitoring: yes
       vpc_subnet_id: subnet-ed86bf85
     register: result
+   
    - debug: var=result
