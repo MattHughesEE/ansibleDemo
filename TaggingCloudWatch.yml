@@ -9,12 +9,12 @@
       region: us-east-2
       group: databases
       instance_type: t2.micro
-      image: ami-123456
+      image: ami-04be6a27b0206807f
       wait: yes
       wait_timeout: 500
       count: 5
       instance_tags:
          db: postgres
       monitoring: yes
-      vpc_subnet_id: subnet-29e63245
+      vpc_subnet_id: subnet-ed86bf85
       assign_public_ip: yes
