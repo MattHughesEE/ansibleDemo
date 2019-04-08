@@ -1,0 +1,29 @@
+---
+- name: Provisioning ec2 instance
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Tagging and CloudWatch
+    ec2:
+      key_name: fhlbckey
+      region: us-east-2
+      #group: databases
+      instance_type: t2.micro
+      #image: ami-04be6a27b0206807f
+      image: ami-0cd3dfa4e37921605
+      wait: yes
+      wait_timeout: 500
+      count: 1
+      instance_tags:
+         db: postgres
+         Application: TestApp
+         Drive: C:/
+         Env: DEV
+         Name: fhcdbsumt02
+      volumes:
+        - device_name: /dev/xdva
+          volume_type: gp2
+          volume_size: 8
+          delete_on_terminiation: true
+      monitoring: yes
+      vpc_subnet_id: subnet-ed86bf85
