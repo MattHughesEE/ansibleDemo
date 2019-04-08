@@ -3,7 +3,7 @@
   hosts: localhost
   connection: local
   vars:
-    aws_region: us-east-2
+    aws_region: us-east-2a
     resource_name: fhcdbsumt02
     instance_type: t2.micro
     key_name: fhlbckey
