@@ -9,8 +9,8 @@
       region: us-east-2
       #group: databases
       instance_type: t2.micro
-      image: ami-04be6a27b0206807f
-      #image: ami-0cd3dfa4e37921605
+      #image: ami-04be6a27b0206807f
+      image: ami-0cd3dfa4e37921605
       wait: yes
       #wait_timeout: 500
       count: 1
@@ -26,7 +26,7 @@
       volumes:
         - device_name: /dev/sda1
           volume_type: gp2
-          volume_size: 8
+          volume_size: 100
           delete_on_termination: true
           tags:
             Name: testingVolTags
