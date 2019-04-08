@@ -7,7 +7,7 @@
     ec2:
       key_name: fhlbckey
       region: us-east-2
-      group: databases
+      #group: databases
       instance_type: t2.micro
       image: ami-04be6a27b0206807f
       wait: yes
@@ -15,6 +15,7 @@
       count: 5
       instance_tags:
          db: postgres
+         Name: Test
       monitoring: yes
       vpc_subnet_id: subnet-ed86bf85
       assign_public_ip: yes
