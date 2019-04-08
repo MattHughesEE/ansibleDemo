@@ -15,11 +15,13 @@
       wait_timeout: 500
       count: 1
       instance_tags:
-         db: postgres
+         BusinessService: BusService
          Application: TestApp
          #Drive: root
          Env: DEV
          Name: fhcdbsumt02
+         Owner: JSMITH
+         Patch Group: Patch1
       volumes:
         - device_name: /dev/sda1
           volume_type: gp2
@@ -31,3 +33,15 @@
    
   - debug:
       var=result
+
+  - name: Add tags to Volume
+    ec2_tag:
+      region: us-east-2
+      resource: result.instances.volume_id
+      state: absent
+      tags:
+        Name: TestApp
+        Drive: root
+        Env: DEV
+        Name: fhcdbsumt02
+        
