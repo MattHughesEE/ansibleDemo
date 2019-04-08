@@ -1,0 +1,33 @@
+---
+- name: Provisioning ec2 instance
+  hosts: localhost
+  connection: local
+  vars:
+    instance_type: t2.micro
+    key_name: fhlbckey
+    image: ami-04be6a27b0206807f
+    region: us-east-2
+  tasks:
+  - name: launching ec2
+    ec2:
+       instance_type: "{{ instance_type }}"
+       key_name: "{{ key_name }}"
+       image: "{{ image }}"
+       region: "{{ region }}"
+     # group: test
+       count: 1
+       instance_tags: 
+       vpc_subnet_id: subnet-ed86bf85
+       assign_public_ip: yes
+       wait: yes
+    register: ec2
+  
+  - debug:
+      var: ec2
+  - name: Volume
+    ec2_vol:
+        instance: "{{ ec2_instance_ids }}"
+        volume_type: gp2
+        volume_size: 4
+        delete_on_termination: yes
+        tags: {'Application':'Example'}
