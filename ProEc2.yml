@@ -17,11 +17,11 @@
       instance_tags:
          db: postgres
          Application: TestApp
-         Drive: C:/
+         #Drive: root
          Env: DEV
          Name: fhcdbsumt02
       volumes:
-        - device_name: /dev/xdva
+        - device_name: /dev/sda1
           volume_type: gp2
           volume_size: 8
           delete_on_terminiation: true
