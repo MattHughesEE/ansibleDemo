@@ -11,7 +11,7 @@
     security_group: sg-079c52d7e252b845d
     Environemnt: Test
     ec2_ami_image: ami-04be6a27b0206807f
-    region: us-east-2
+    region: us-east-2a
     Application_Name: TestApp
   tasks:
   - name: New instance with Public IP
