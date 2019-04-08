@@ -27,7 +27,7 @@
   - name: Volume
     ec2_vol:
         region: "{{ region }}"
-        instance: "{{ ec2.instance_ids }}"
+        instance: ec2.instance_ids
         volume_type: gp2
         volume_size: 4
         delete_on_termination: yes
