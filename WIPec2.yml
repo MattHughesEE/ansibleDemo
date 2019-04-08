@@ -17,7 +17,7 @@
     ec2_instance:
     #profile:
       region: 
-      resouce: "{{ resource_name }}"
+      #resouce: "{{ resource_name }}"
       key_name: "{{ key_name }}"
       vpc_sub_net: "{{ subnet_name }}"
       security_group: "{{ security_group }}"
