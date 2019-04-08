@@ -3,7 +3,7 @@
   hosts: localhost
   connection: local
   tasks:
-  - name: Tagging and CloudWatch
+  - name: Launch ec2 Instance
     ec2:
       key_name: fhlbckey
       region: us-east-2
@@ -12,7 +12,7 @@
       #image: ami-04be6a27b0206807f
       image: ami-0cd3dfa4e37921605
       wait: yes
-      wait_timeout: 500
+      #wait_timeout: 500
       count: 1
       instance_tags:
          BusinessService: BusService
@@ -35,14 +35,14 @@
   - debug:
       var=result
 
-  - name: Add tags to Volume
-    ec2_tag:
-      region: us-east-2
-      resource: result.instances.volume_id
-      state: absent
-      tags:
-        Name: TestApp
-        Drive: root
-        Env: DEV
-        Name: fhcdbsumt02
+ # - name: Add tags to Volume
+   # ec2_tag:
+     # region: us-east-2
+    #  resource: result.instances.volume_id
+     # state: absent
+      #tags:
+       # Name: TestApp
+        #Drive: root
+        #Env: DEV
+       # Name: fhcdbsumt02
         
