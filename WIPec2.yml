@@ -3,7 +3,7 @@
   hosts: localhost
   connection: local
   vars:
-    aws_region: us-east-2a
+    #aws_region: us-east-2a
     resource_name: fhcdbsumt02
     instance_type: t2.micro
     key_name: fhlbckey
@@ -16,8 +16,8 @@
   - name: New instance with Public IP
     ec2_instance:
     #profile:
-      region: "{{ aws_region }}"
-      name: "{{ resource_name }}"
+      region: 
+      resouce: "{{ resource_name }}"
       key_name: "{{ key_name }}"
       vpc_sub_net: "{{ subnet_name }}"
       security_group: "{{ security_group }}"
