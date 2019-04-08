@@ -21,6 +21,5 @@
        assign_public_ip: yes
        wait: yes
     register: ec2
-  
   - debug:
       var: ec2  
