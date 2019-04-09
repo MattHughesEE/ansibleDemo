@@ -29,7 +29,9 @@
           volume_size: 100
           delete_on_termination: true
           ec2_tags:
-            Name: testingVolTags
+            tags:
+              Name: testingVolTags
+              Testing: Here
       monitoring: yes
       #vpc_subnet_id: subnet-ed86bf85
       
