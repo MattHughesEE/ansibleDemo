@@ -42,7 +42,7 @@
   - debug:
       var=result
   - debug:
-      var=result.instances
+      var=result.instances.block_device_mapping
   
   
   - name: Add tags to Volume
