@@ -68,7 +68,7 @@
       evaluation_periods: 8
       #unit: "Percent"
       description: "Status check alarm"
-      dimensions: {'InstanceId' : '{{ result.instance_ids'}}'}
+      dimensions: {'InstanceId' : '{{ result.instance_ids }}'}
       alarm_actions: ['arn:aws:sns:us-east-2:935659307200:NotificationTopicEC2']
       
       
