@@ -42,7 +42,7 @@
   - debug:
       var=result
   - debug:
-      var=result.instances[2]
+      var=result.instances
   
   
   - name: Add tags to Volume
