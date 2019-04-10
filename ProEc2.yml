@@ -42,7 +42,7 @@
   - debug:
       var=result
       
-  - debug: msg="{{ ec2_info.instances[0].block_device_mapping | map(attribute='volume_id') | list }}"
+  - debug: msg="{{ result.instances[0].block_device_mapping | map(attribute='volume_id') | list }}"
   
   - debug: msg="{{ result.instances[0].block_device_mapping[0].volume_id }}"
   
