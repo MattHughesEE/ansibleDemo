@@ -55,7 +55,7 @@
       evaluation_periods: 8
       #unit: "Percent"
       description: "Status check alarm"
-      dimensions: ['InstanceName' : '"{{ Instance_name }}"']
+      dimensions: {'InstanceName' : 'fhcdbsumt02'}
       #alarm_actions: [' ']
       
       
