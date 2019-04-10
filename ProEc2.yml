@@ -42,7 +42,7 @@
   - debug:
       var=result
   - debug:
-      var=result.instances.block_device_mapping./dev/xvda[2]
+      var=result.instances.block_device_mapping[0]
   
   
   - name: Add tags to Volume
