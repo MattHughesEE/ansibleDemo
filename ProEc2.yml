@@ -58,7 +58,7 @@
     ec2_metric_alarm:
       state: present
       region: us-east-2
-      name: "InstanceName.NoAutorecover-statuscheck_instance-id"
+      name: "{{ Instance_name }}_NoAutorecover-statuscheck_instance-{{ result.instance_ids }}"
       metric: "StatusCheckFailed"
       namespace: "AWS/EC2"
       statistic: Average
@@ -68,8 +68,8 @@
       evaluation_periods: 8
       #unit: "Percent"
       description: "Status check alarm"
-      dimensions: {'InstanceName' : 'fhcdbsumt02'}
-      #alarm_actions: [' ']
+      dimensions: {'InstanceId' : '{{ result.instance_ids'}}'}
+      alarm_actions: ['arn:aws:sns:us-east-2:935659307200:NotificationTopicEC2']
       
       
       
