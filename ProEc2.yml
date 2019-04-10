@@ -42,13 +42,13 @@
   - debug:
       var=result
   - debug:
-      var=result.instances.block_device_mapping[0]['volume_id']
+      var=result.instances.block_device_mapping./dev/xvda.volume_id
   
   
   - name: Add tags to Volume
     ec2_tag:
       region: us-east-2
-      resource: result.instances[2]./dev/xvda/[2]
+      resource: result.instances[2]./dev/xvda[2]
       state: absent
       tags:
         Name: TestApp
