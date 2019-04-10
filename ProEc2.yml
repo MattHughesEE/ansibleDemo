@@ -46,7 +46,7 @@
   - name: Add tags to Volume
     ec2_tag:
       region: us-east-2
-      resource: result.instances.volume_id
+      resource: result.instances.block_device_mapping[0].volume_id
       state: absent
       tags:
         Name: TestApp
