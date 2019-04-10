@@ -41,8 +41,10 @@
    
   - debug:
       var=result
-  - debug:
-      var=result.instances.block_device_mapping
+  - debug: msg="{{ result.instances[0].block_device_mapping[0].volume_id }}"
+  
+ # - debug:
+      #var=result.instances.block_device_mapping
   
   
   - name: Add tags to Volume
