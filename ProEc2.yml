@@ -56,6 +56,11 @@
  # - debug:
       #var=result.instances.block_device_mapping
   
+  - name: gather facts about volume
+    ec2_vol_facts:
+    
+    register: vol_result
+  - debug: var=vol_result
   
   - name: Add tags to Volume
     ec2_tag:
