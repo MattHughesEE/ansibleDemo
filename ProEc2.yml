@@ -45,7 +45,7 @@
   -debug:
       var=result.instances[0].block_device_mapping./dev/xvda.volume_id
   
-  - debug: var="{{ volumes.volumes | map(attribute='id') | list }}"
+ # - debug: var="{{ volumes.volumes | map(attribute='id') | list }}"
       
   - debug: var="{{ result.instances[0].block_device_mapping | map(attribute='volume_id') | list }}"
   
