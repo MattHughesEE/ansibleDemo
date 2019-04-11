@@ -41,6 +41,8 @@
    
   - debug:
       var=result
+      
+  - debug: var=ansible_facts
   
   - debug:
       var=result.instances[0].block_device_mapping["/dev/xvda"].volume_id
