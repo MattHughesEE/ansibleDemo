@@ -47,9 +47,9 @@
   
  # - debug: var="{{ volumes.volumes | map(attribute='id') | list }}"
       
-  - debug: var="{{ result.instances[0].block_device_mapping | map(attribute='volume_id') | list }}"
+#  - debug: var="{{ result.instances[0].block_device_mapping | map(attribute='volume_id') | list }}"
   
-  - debug: var="{{ result.instances[0].block_device_mapping[0].volume_id }}"
+ # - debug: var="{{ result.instances[0].block_device_mapping[0].volume_id }}"
   
  # - debug:
       #var=result.instances.block_device_mapping
