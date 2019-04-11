@@ -66,7 +66,12 @@
         Name: TestApp
         Drive: root
         Env: DEV
-        Name: fhcdbsumt02  
+        Name: fhcdbsumt02
+  
+  register: result2
+  
+  - debug:
+      var=result2
   
   - name: create alarm
     ec2_metric_alarm:
