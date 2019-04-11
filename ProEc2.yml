@@ -43,7 +43,7 @@
       var=result
   
   - debug:
-      var=result.instances[0].block_device_mapping
+      var=result.instances[0].block_device_mapping["/dev/xvda"].volume_id
   
  # - debug: var="{{ volumes.volumes | map(attribute='id') | list }}"
       
@@ -58,7 +58,7 @@
   - name: Add tags to Volume
     ec2_tag:
       region: us-east-2
-      resource: "{{ item.1.id }}"
+      resource: result.instances[0].block_device_mapping["/dev/xvda"].volume_id
       state: absent
       tags:
         Name: TestApp
