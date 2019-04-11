@@ -58,6 +58,7 @@
   
   - name: gather facts about volume
     ec2_vol_facts:
+    reegion: "{{ aws_region }}"
     
     register: vol_result
   - debug: var=vol_result
