@@ -1,0 +1,9 @@
+---
+- name: RHEL Server Inital Configuration
+  hosts: all
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Commit changes to made in the SSH daemon configuration
+      expect:
+        command: service sshd reload
