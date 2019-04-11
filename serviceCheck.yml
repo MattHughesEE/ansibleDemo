@@ -1,6 +1,7 @@
 ---
 - name: RHEL Server Inital Configuration
   hosts: all
+  ansible_user: ec2-user
   become: yes
   become_method: sudo
   tasks:
